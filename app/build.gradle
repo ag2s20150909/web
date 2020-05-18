@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+    defaultConfig {
+        applicationId "cn.liuyin.web"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled =true  //这句话加上就ok
+//        ndk {
+//            moduleName "native-lib"         //生成的so名字
+//            ldLibs "log" ,"jnigraphics"//新增
+//            abiFilters "armeabi"  //输出指定三种abi体系结构下的so库。
+//            stl "stlport_static"    //打开.c 的 debug , 下面第 4 点会讲到
+//        }
+
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+
+
+
+
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            pseudoLocalesEnabled true
+        }
+    }
+//        externalNativeBuild {
+//            cmake {
+//                path "CMakeLists.txt"
+//            }
+//        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+
+
+    }
+
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api 'androidx.appcompat:appcompat:1.1.0'
+    api 'com.githang:status-bar-compat:0.5'
+    api 'com.tencent.tbs.tbssdk:sdk:43903'
+    testImplementation 'junit:junit:4.13'
+
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation files('libs/jsoup-1.10.2.jar')
+}

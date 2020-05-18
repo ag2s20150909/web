@@ -1,0 +1,114 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/menu_test_function">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/main_menu_javascripts"
+                    android:title="@string/menu_javascripts" />
+                <item
+                    android:id="@+id/main_menu_run_javascript"
+                    android:title="@string/menu_run_javascript" />
+                <item
+                    android:id="@+id/main_menu_day_or_night"
+                    android:title="@string/menu_night_mode" />
+                <item
+                    android:id="@+id/main_menu_video_full_screen"
+                    android:title="@string/menu_video_fullscreen" />
+                <item
+                    android:id="@+id/main_menu_set_tts"
+                    android:title="@string/main_menu_set_tts" />
+
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item"
+        android:title="@string/menu_webpage_operate">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/main_menu_view_websouce"
+                    android:title="@string/menu_view_source_http" />
+                <item
+                    android:id="@+id/main_menu_view_websouce_by_js"
+                    android:title="@string/menu_view_source_js" />
+                <item
+                    android:id="@+id/main_menu_view_websouce_by_chrome"
+                    android:title="@string/menu_view_source_chrome" />
+                <item
+                    android:id="@+id/main_menu_view_get_all_links"
+                    android:title="@string/menu_webpage_fenxi" />
+                <item
+                    android:id="@+id/main_menu_view_find_source_by_tag"
+                    android:title="@string/menu_find_source_by_tag" />
+                <item
+                    android:id="@+id/main_menu_view_show_http_log"
+                    android:title="@string/menu_web_request_log" />
+                <item
+                    android:id="@+id/main_menu_view_save_screenshots"
+                    android:title="@string/menu_save_screenshots" />
+                <item
+                    android:id="@+id/main_menu_view_save_long_screenshots"
+                    android:title="@string/menu_save_long_screenshots" />
+                <item
+                    android:id="@+id/main_menu_add_adlist"
+                    android:title="添加到广告链接" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_offen_used_function">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/main_menu_shuqian"
+                    android:title="@string/menu_shuqian" />
+                <item
+                    android:id="@+id/main_menu_history"
+                    android:icon="@drawable/ic_history"
+                    android:title="@string/menu_visisit_history" />
+                <item
+                    android:id="@+id/main_menu_add_shuqian"
+                    android:title="@string/menu_add_shuqian" />
+                <item
+                    android:id="@+id/main_menu_share"
+                    android:title="@string/menu_share" />
+                <item
+                    android:id="@+id/main_menu_share_qq"
+                    android:title="@string/menu_share_to_qq" />
+
+                <item
+                    android:id="@+id/main_menu_switch_ua"
+                    android:title="@string/menu_switch_ua" />
+                <item
+                    android:id="@+id/main_menu_clear_webview_cache"
+                    android:title="@string/menu_clear_webview_cache" />
+                <item
+                    android:id="@+id/main_menu_clear_webview_cookie"
+                    android:title="@string/menu_clear_webview_cookie" />
+
+                <item
+                    android:id="@+id/main_menu_upgrade_adlist"
+                    android:title="@string/menu_upgrade_adlist" />
+                <item
+                    android:id="@+id/main_menu_get_vip_video"
+                    android:title="@string/menu_get_vip_video" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/main_menu_exit"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="@string/menu_exit" />
+    <item
+        android:id="@+id/main_menu_goto_home"
+        android:icon="@drawable/ic_baidu"
+        android:title="@string/menu_goto_home" />
+
+
+</menu>
+

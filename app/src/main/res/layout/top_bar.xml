@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:minHeight="50dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/web_goback"
+            android:layout_width="@dimen/top_bar_button"
+            android:layout_height="@dimen/top_bar_button"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_chevron_left_black_24dp"
+            android:contentDescription="@string/topbar_goback"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/web_exit"
+            android:layout_width="@dimen/top_bar_button"
+            android:layout_height="@dimen/top_bar_button"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_exit_to_app_black_24dp"
+            android:contentDescription="@string/topbar_exit" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/web_icon"
+                android:layout_width="@dimen/top_bar_button"
+                android:layout_height="@dimen/top_bar_button"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_settings_black_24dp"
+                android:contentDescription="@string/topbar_settings" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:id="@+id/web_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/topbar_webtitle"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/web_refresh"
+                android:layout_width="@dimen/top_bar_button"
+                android:layout_height="@dimen/top_bar_button"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_refresh_black_24dp"
+                android:contentDescription="@string/topbar_refresh" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/web_goforward"
+            android:layout_width="@dimen/top_bar_button"
+            android:layout_height="@dimen/top_bar_button"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_chevron_right_black_24dp"
+            android:contentDescription="@string/topbar_goforward" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_secrch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/search_icon"
+            android:layout_width="@dimen/top_bar_button"
+            android:layout_height="@dimen/top_bar_button"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baidu"
+            android:contentDescription="@string/topbar_searchicon" />
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            android:contentDescription="@string/topbar_searchtext"
+            android:gravity="start"
+            android:inputType="textAutoComplete"
+            android:maxLines="1"
+            android:text=""
+            tools:ignore="LabelFor">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_cleartext"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_cancel_black_24dp"
+            android:contentDescription="@string/topbar_cleartext"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/web_search"
+            android:layout_width="@dimen/top_bar_button"
+            android:layout_height="@dimen/top_bar_button"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_search_black_24dp"
+            android:contentDescription="@string/topbar_search" />
+
+    </LinearLayout>
+</LinearLayout>
+

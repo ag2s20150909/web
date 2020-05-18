@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adBlockUrl">
+        <item>xia.bhbd08.cc</item>
+        <item>meise.ledjingxi.com/</item>
+        <item>caoqq.ajapk.com/</item>
+        <item>img/cepiao/weishi/</item>
+        <item>3v.do/images/piao.gif</item>
+        <item>.cc/js/ads/</item>
+        <item>.cn/js/ads/</item>
+        <item>.co/js/ads/</item>
+        <item>.com/js/ads/</item>
+        <item>.do/ad/</item>
+        <item>doubiekan/js</item>
+        <!--百度-->
+
+        <!--老司机影院-->
+        <item>gedawang.com/s.php</item>
+        <item>v.meiti1.net</item>
+        <item>v.e7002.com</item>
+        <item>js4423.doupuer.com</item>
+        <item>c1.yunluge.com</item>
+        <item>www.appbsl.com</item>
+        <item>s11.cnzz.com/</item>
+        <item>gg.txtbbs.com</item>
+        <item>cpro.baidu.com</item>
+        <item>whafwl.com</item>
+        <item>quankan.tv/js/dibu.js</item>
+        <!--CSDN-->
+        <item>csdnimg.cn/pubfooter/js</item>
+        <item>ads.csdn.net</item>
+        <item>ad.csdn.net</item>
+        <item>counter.csdn.net</item>
+        <item>dc.csdn.net</item>
+        <item>dc2.csdn.net</item>
+        <item>img.ads.csdn.net</item>
+        <item>njs.hcm94alliance.com</item>
+        <item>jiejuefangan741.com</item>
+        <item>show.niqiu99.org</item>
+
+
+    </string-array>
+</resources>

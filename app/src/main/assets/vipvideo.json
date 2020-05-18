@@ -1,0 +1,77 @@
+[
+  {
+    "name": "vParse[腾]",
+    "url": "https://api.vparse.org/?url=",
+    "title": "支持腾讯"
+  },
+  {
+    "name": "噗噗电影",
+    "url": "http://pupudy.com/play?make=url&id=",
+    "title": "综合接口，稳定·全网VIP*【作者ttmsjx】脚本的接口"
+  },
+  {
+    "name": "酷绘",
+    "url": "http://appapi.svipv.kuuhui.com/svipjx/liulanqichajian/browserplugin/qhjx/qhjx.php?id=",
+    "title": "综合接口，酷绘*【作者ahuiabc2003】脚本的接口"
+  },
+  {
+    "name": "百域阁",
+    "url": "http://api.baiyug.cn/vip/index.php?url=",
+    "title": "转圈圈就换线路"
+  },
+  {
+    "name": "旋风解析",
+    "url": "http://api.xfsub.com/index.php?url=",
+    "title": "1905优先使用"
+  },
+  {
+    "name": "石头解析",
+    "url": "https://jiexi.071811.cc/jx.php?url=",
+    "title": "手动点播放"
+  },
+  {
+    "name": "无名小站",
+    "url": "http://www.sfsft.com/admin.php?url=",
+    "title": "无名小站同源"
+  },
+  {
+    "name": "VIP看看",
+    "url": "http://q.z.vip.totv.72du.com/?url=",
+    "title": "更换线路成功率会提高"
+  },
+  {
+    "name": "ODFLV",
+    "url": "http://aikan-tv.com/?url=",
+    "title": "不稳定，广告过滤软件可能有影响"
+  },
+  {
+    "name": "163人",
+    "url": "http://jx.api.163ren.com/vod.php?url=",
+    "title": "偶尔支持腾讯"
+  },
+  {
+    "name": "CKFLV",
+    "url": "http://www.0335haibo.com/tong.php?url=",
+    "title": "CKFLV云,部分站点不支持"
+  },
+  {
+    "name": "舞动秋天",
+    "url": "http://qtzr.net/s/?qt=",
+    "title": "qtzr.net"
+  },
+  {
+    "name": "无名小站2",
+    "url": "http://www.wmxz.wang/video.php?url=",
+    "title": "转圈圈就换线路"
+  },
+  {
+    "name": "眼睛会下雨",
+    "url": "http://www.vipjiexi.com/yun.php?url=",
+    "title": "www.vipjiexi.com"
+  },
+  {
+    "name": "人人发布",
+    "url": "http://v.renrenfabu.com/jiexi.php?url=",
+    "title": "综合，多线路"
+  }
+]
