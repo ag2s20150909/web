@@ -8,7 +8,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.0-${releaseTime()}"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled =true  //这句话加上就ok
@@ -65,4 +65,10 @@ dependencies {
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
     implementation files('libs/jsoup-1.10.2.jar')
+}
+
+def releaseTime() {
+
+    return new Date().format("yyyy.MM.dd.HH:mm", TimeZone.getTimeZone("GMT+08:00"))
+
 }
