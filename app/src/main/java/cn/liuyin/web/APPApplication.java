@@ -83,36 +83,22 @@ public class APPApplication extends Application {
     }
 
     private void initTBS() {
-        //搜集本地tbs内核信息并上报服务器，服务器返回结果决定使用哪个内核。
-        QbSdk.setDownloadWithoutWifi(false);
-
-
         QbSdk.PreInitCallback cb = new QbSdk.PreInitCallback() {
 
             @Override
             public void onViewInitFinished(boolean arg0) {
                 // TODO Auto-generated method stub
                 //x5內核初始化完成的回调，为true表示x5内核加载成功，否则表示x5内核加载失败，会自动切换到系统内核。
-                if (!arg0) {
-                    Toast.makeText(APPApplication.this, "X5内核初始化失败，自动切换到系统内核。", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(APPApplication.this, "X5内核初始化成功。", Toast.LENGTH_SHORT).show();
-                }
-
+                //Log.d("app", " onViewInitFinished is " + arg0);
             }
-
 
             @Override
             public void onCoreInitFinished() {
                 // TODO Auto-generated method stub
-                //Toast.makeText(APPApplication.this, "X5内核开始初始化，请稍候。", Toast.LENGTH_SHORT).show();
             }
         };
-
         //x5内核初始化接口
-        if (!QbSdk.isTbsCoreInited()) {
-            QbSdk.initX5Environment(getApplicationContext(), cb);
-        }
+        QbSdk.initX5Environment(getApplicationContext(),  cb);
     }
 
 
